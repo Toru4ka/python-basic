@@ -6,5 +6,5 @@ RUN pip install "poetry==1.8.2"
 RUN poetry config virtualenvs.create false
 COPY pyproject.toml poetry.lock ./
 RUN poetry install --no-root
-COPY homework_03/app.py ./
+COPY app.py ./
 CMD ["uvicorn", "app:app", "--host=0.0.0.0", "--port=8000"]
