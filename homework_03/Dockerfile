@@ -1,4 +1,5 @@
-# из директории otus выполнить команду: docker build -t web -f homework_03/Dockerfile .
+# для билда докер контейнера перейти в директорию homework_03: cd homework_03
+# выполнить команду: docker build -t web .
 # затем выполнить команду docker run -it -p 8000:8000 web
 FROM python:3.10-bookworm
 WORKDIR /app
